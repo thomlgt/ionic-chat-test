@@ -1,20 +1,15 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content padding>
+  <form (ngSubmit)="goToChat(formValue)" #formValue="ngForm">​
+    <ion-item>​
+      <ion-label>Login</ion-label>​
+      <ion-input type="text" name="login" ngModel></ion-input>​
+    </ion-item>​
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-item>​
+      <ion-label>Email</ion-label>​
+      <ion-input type="email" name="email" ngModel></ion-input>​
+    </ion-item>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-button type="submit" color="primary" expand="block">Chatter</ion-button>​​
+  </form>
 </ion-content>
